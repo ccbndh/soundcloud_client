@@ -1,0 +1,35 @@
+# Python django
+*.pyc
+__pycache__
+db.sqlite3
+
+venv
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+
+#IDE
+.DS_Store
+.idea
+*~
+
+
+# Logs
+*.log
+/logs/
+
+# webpack
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+
+tmp_download/
+#static/
+env/
+
+spiders/credentials/drive-python-quickstart.json
+#/static
