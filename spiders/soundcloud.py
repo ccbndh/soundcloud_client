@@ -12,9 +12,13 @@ def get_client_id():
 
     for i in src_js:
         src = i.get('src')
-        if src and 'a-v2.sndcdn.com/assets/app' in src:
+        if src:
             src_js = session.get(src)
-            return src_js.text.split('client_id:"')[1].split('",')[0]
+            try:
+                client_id = src_js.text.split('client_id:"')[1].split('",')[0]
+                return client_id
+            except Exception as err:
+                pass
     return None
 
 
